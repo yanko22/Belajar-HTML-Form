@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar input</title>
+  </head>
+  <body>
+    <!-- 
+    Input Attribute 
+    1. HTML Form mendukung banyak sekali jenis input, dan untuk mengatur jenis input, kita harus mengubahnya menggunakan attribute. ada beberapa attribute yang perlu kita ketahui di input 
+    2. name, digunaksn untuk memberikan nama input, nama input haru unik dalam form yang sama, tida boleh
+    ada yang sama; 
+    3. type, digunakan untuk memilih jenis input; 
+    4. value, digunakan untuk mengubah nilai default dari input;
+     5. disabled, digunakan untuk menjadikan input tidak aktif
+     6. readonly, digunakan untuk menjadikan  input tidak bisa diubah; 
+    7. required, digunakan untuk menandai bahwa input
+    wajid diisi. -->
+    <form
+      name="contoh"
+      action="form-submit.html"
+      enctype="application/x-www-form-urlencoded"
+      method="post"
+      target="_blank"
+    >
+      <br />
+      pencarian :
+      <input
+        type="text"
+        name="nama"
+        id="input-1"
+        value="user"
+        required
+        placeholder="harap isi disini"
+      />
+    </form>
+  </body>
+</html>
