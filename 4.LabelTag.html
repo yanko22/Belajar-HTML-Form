@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Label Tag
+    1. saat kita membuat caption untuk input, direkomendasikan menggunakan Label, dibandingkan menggunakan text polos atau tag seperti span/p/div
+    2. Label Tag bisa dikaitkan dengan input, sehingga ketika kita mengklik tulisan pada label, secara otomatis fokus akan berpindah ke input
+    3. selain itu, saat mengaktifkan Screen Reader, ketiak kita mengklik input, secara otomatis label yang terasosiasi dengan input tersebut akan dibaca oleh Screen Reader
+    4. Label memiliki attribute "for" yang digunakan utnuk menentukan input Id yang dipilih untuk diasosiasikan -->
+    <form name="register">
+      <label for="nama">nama:</label>
+      <input type="text" id="nama" /><br />
+      <label for="alamat">alamat:</label>
+      <input type="text" id="alamat" /><br />
+      <label for="hobi">hobi:</label>
+      <input type="text" id="hobi" /><br />
+    </form>
+  </body>
+</html>
