@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Action</title>
+  </head>
+  <body>
+    <!-- 
+    Attribut Action Form
+    1. Attribute "action" merupakan atribut untuk mengirimkan semua input data akan dikirim
+    2. Kita juga bisa menentukan jenis method, baik itu "get" atau "post" ketika mengirimkan data
+    3. Method memiliki beberapa value pertama get dan pos
+    a. dengan get nilai dari parameter query dapat dilihat di body html
+    b. dengan post nilai dari parameter query tidak dapat dilihat di body html-->
+    <form name="register" action="receive.html" method="post">
+      <label for="nama">nama:</label><br />
+      <input type="text" id="nama" name="name" /><br />
+      <label for="alamat">alamat:</label><br />
+      <input type="text" id="alamat" name="alamat" /><br />
+      <label for="hobi">hobi:</label><br />
+      <input type="text" id="hobi" name="hobi" /><br />
+      <input type="submit" value="Register" />
+    </form>
+    <!-- 
+    Memproses Input
+    1. Untuk memproses Input data yang dikirimkan oleh form, kita harus menggunakan teknologi server di Web Server;
+    2. HTML adalah halaman web yang ditampikan di client (Web Browser), sehingga HTMl tidak bisa digunakan untuk memproses input data dari form;
+    3. Untuk memproses data, kita harus menggunakan teknologi berbasis server, misal contohnya adalah PHP, NodeJs,Java dan masih banyak yg lainnya;-->
+  </body>
+</html>
