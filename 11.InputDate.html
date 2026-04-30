@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Date</title>
+  </head>
+  <body>
+    <!-- 
+    Input Date
+    1. Inptu type date, adalah jenis untuk menerima informasi berupa tanggal (tahun,bulan dan tanggal)
+    2. Jika ingin mengubah nilai value di inptu date, kita bisa menggunakan format yyyy-mm-dd
+    3. yyyy adalah tahun dalam 4 digit
+    4. mm adalah bulan dalam 2 digit
+    5. dd adalah tanggal dalam 2 digit
+    6. Untuk membatasi minimal dan maksimal tanggal yang dipilih, kita bisa menggunakan attribute min dan max -->
+    <form>
+      <label for="join_date">Tanggal Masuk</label>
+      <input
+        type="date"
+        name="join_date"
+        id="join_date"
+        value="2000-04-23"
+        min="2000-01-01"
+        max="2001-12-31"
+      />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
