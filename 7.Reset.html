@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tombol Reset</title>
+  </head>
+  <body>
+    <!-- 
+    Input Reset
+    1. Input type reset, adalah input yang akan ditampikan dalam bentuk tombol
+    2. jika tombol reset ditekan, maka seluruh input di form tersebut, nilainya akan berubah menjadi niali default seperti yang terdapat di attribute value nya -->
+    <form name="register" action="receive.html" method="post">
+      <label for="nama">nama:</label><br />
+      <input type="text" id="nama" name="name" value="Nama" /><br />
+      <label for="alamat">alamat:</label><br />
+      <input type="text" id="alamat" name="alamat" value="Alamat" /><br />
+      <label for="hobi">hobi:</label><br />
+      <input type="text" id="hobi" name="hobi" value="Hobi" /><br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
