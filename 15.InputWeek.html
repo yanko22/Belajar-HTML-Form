@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Week</title>
+  </head>
+  <body>
+    <!-- 
+    Input Week
+    1. Input type week digunakan untuk menerima input minggu dalam satu tahun;
+    2. Total minggu dalam satu tahun berkisar antara 52-53, sehingga nilai maksimal adalah nilai tersebut;
+    3. Format Penulisan Week bisa menggunakan pola yyyy-Wwww;
+    4. yyyy adalah tahun dalam 4 digit;
+    5. ww adalah minggu dalam 2 digit;
+    6. untuk membatasi minimal dan maksimal dapat menggunakan atribut max atau min-->
+    <form action="#">
+      <label for="waktu_mulai">Waktu Mulai</label><br />
+      <input
+        type="week"
+        name="waktu_mulai"
+        id="waktu_mulai"
+        value="'2026-W01" /><br />
+      <label for="waktu_berakhir">Waktu Berakhir</label><br />
+      <input
+        type="week"
+        name="waktu_berakhir"
+        id="waktu_berakhir"
+        value="'2026-W52" /><br />
+      <input type="submit" value="simpan" />
+    </form>
+  </body>
+</html>
