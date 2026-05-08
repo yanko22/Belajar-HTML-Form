@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Telephone</title>
+  </head>
+  <body>
+    <!-- 
+    Input Telephone
+    1. Input type bisa digunakan untuk input informasi telepon;
+    2. Input tel harus ditentukan sendiri format,dikarenakan format telephone akan berbeda untuk setiap negara berbeda dengan input email dan number
+    3. kita bisa mengubah aturan format nomor telepon menggunakan atribut pattern, dimana isinya harus berisi Regular Expression;
+     -->
+    <form action="#">
+      <label for="telephone">Telephone</label>
+      <input
+        type="tel"
+        name="telephone"
+        id="telephone"
+        pattern="(62)[0-9]{5,12}" />
+      <br />
+      <input type="submit" value="simpan" />
+    </form>
+  </body>
+</html>
