@@ -18,12 +18,30 @@
      2. Option tag memiliki atribut value sebagai nilainya, namun unutk ditampilkan dalam Web Browser, kita bisa isi option tag dengen content misalnya text atau gambar;
      3. selain itu, jika kita ingin memilih secara default salah satu option, kiba bisa menggunakan atribut selected;
      -->
+    <h1>hanya bisa satu yang dipilih</h1>
     <form action="#">
       <label for="hobi">Hobi:</label>
       <select name="hobi" id="hobi">
         <option value="coding" selected>Coding</option>
         <br />
         <option value="reading">Reading</option>
+        <br />
+        <option value="write">Writing</option>
+      </select>
+      <input type="submit" value="simpan" />
+    </form>
+    <h1>bisa multiple</h1>
+    <!-- 
+    Multiple Select
+    1. salah satu kelebihan dibandingkan radio type, didalam select, jika misal kita bisa beberapa opsi pilihan seperti checkbox , bisa bisa gunakan atribut multiple;
+    2. untuk menetukan seberapa besar tampilan kita bisa menggunakan mode multiple, kita bisa gunakan atribut size; -->
+    <form action="#">
+      <label for="hobi2">Hobi:</label>
+      <select name="hobi2" id="hobi2" multiple size="2">
+        <option value="coding" selected>Coding</option>
+        <br />
+        <option value="reading">Reading</option>
+        size="2"
         <br />
         <option value="write">Writing</option>
       </select>
