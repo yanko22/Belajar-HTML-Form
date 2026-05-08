@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Input Number
+    1. Input type number adalah input untuk informasi number atau angka;
+    2. jika kita menginputkan bukan number atau angka, secara otomatis HTML menganggap nilainya tidak valid;
+    3. Untuk input type number, kita bisa gunakan atribut min dan max
+    4. Min digunakan untuk mengatur nilai minimal;
+    5. Max digunakan utnk mengatur nilai maksimal; -->
+    <form action="#">
+      <label for="nilai_ujian">Nilai Ujian</label>
+      <input
+        type="number"
+        name="nilai_ujian"
+        id="nilai_ujian"
+        id="number"
+        min="0"
+        max="100" />
+      <input type="submit" value="simpan" />
+    </form>
+  </body>
+</html>

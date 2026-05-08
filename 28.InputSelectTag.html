@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Tag</title>
+  </head>
+  <body>
+    <!-- 
+    Select Tag
+    1. Select tag adalah alternatif lain seperti inpu type radio;
+    2. saat menggunakan input type radio, jika opsi pilihan terlalu banyak, maka tampilan input akan sangat panjang;
+    3. Select tag menawarkan solusi yang sederhana, dimana input akan seperti type text, namun kita bisa memilih opsi pilihan seperti radio type;
+     -->
+    <!-- 
+     Option Tag
+     1. untuk menambahkan opsi pilihan dalam select tag, kita bisa menggunakan tag option;
+     2. Option tag memiliki atribut value sebagai nilainya, namun unutk ditampilkan dalam Web Browser, kita bisa isi option tag dengen content misalnya text atau gambar;
+     3. selain itu, jika kita ingin memilih secara default salah satu option, kiba bisa menggunakan atribut selected;
+     -->
+    <form action="#">
+      <label for="hobi">Hobi:</label>
+      <select name="hobi" id="hobi">
+        <option value="coding" selected>Coding</option>
+        <br />
+        <option value="reading">Reading</option>
+        <br />
+        <option value="write">Writing</option>
+      </select>
+      <input type="submit" value="simpan" />
+    </form>
+  </body>
+</html>

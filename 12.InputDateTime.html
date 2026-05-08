@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Date Time</title>
+  </head>
+  <body></body>
+  <!-- 
+  Input Date Time
+  1. Jika untuk input tangagl bida menggunakna type date, jika dibutuhkan hingga menggunakan menit, kita bisa menggunakan Input Date Time, yaitu menggunakan type datetime-local;
+  2. Format value untuk date time adalah yyyy-mm-ddThh:mm;
+  3. Dimana tanggal dan waktu dipisah oleh karakter T
+  4. hh adalah jam dalam format 2 digit
+  5. mm adalah menit dalan format 2 digit
+  6. untuk membatasi minimal dan maksimal waktu yang dipilih, kita bisa gunakan atribut min dan max;
+  -->
+  <form>
+    <label for="jam_masuk">Jam Masuk</label>
+    <br />
+    <input type="datetime-local" name="jam_masuk" id="jam_masuk" />
+    <input type="submit" value="simpan" />
+  </form>
+</html>
