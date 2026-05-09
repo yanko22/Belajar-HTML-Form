@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,6 +44,34 @@
         size="2"
         <br />
         <option value="write">Writing</option>
+      </select>
+      <input type="submit" value="simpan" />
+    </form>
+    <!--
+    Option Group Tag
+    1. Saat pilihan option sangat banyak, kadang ada baiknya kita buat option dalam grup;
+    2. Hal ini akan membuat pengguna lebih mudah ketika melakukan pemilihan;
+    3. Kita bisa bungkus option dalam grup menggunakan opotroup tag;
+    4. Dan untuk menambahkan desktipsi grup, kita bisa gunakan atribut label  -->
+    <h1>Optgroup Tag</h1>
+    <form action="#">
+      <label for="hobi3">Hobi:</label>
+      <select name="hobi" id="hobi">
+        <optgroup label="Coding">
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="js" selected>JS</option>
+        </optgroup>
+        <optgroup label="Reading">
+          <option value="buka1">Jika Kucing Hilang dari Dunia</option>
+          <option value="buku2">Kastil Terpencil didalam Cermin</option>
+          <option value="buku3">Pangeran Kecil</option>
+        </optgroup>
+        <optgroup label="Writing">
+          <option value="tulis1">Jurnal</option>
+          <option value="tulis2">Note</option>
+          <option value="tulis4">Diary</option>
+        </optgroup>
       </select>
       <input type="submit" value="simpan" />
     </form>
