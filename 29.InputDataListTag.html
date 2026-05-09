@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data List Tag</title>
+  </head>
+  <body>
+    <!-- 
+    Data List Tag
+    1. saat melakukan pencarian di google misalnya, kita sering melihat rekomendasi berupa autocomplete kata-kata yang ingin kita cari;
+    2. saat kita membuat input type text, kita bisa menambahkan sumber data yanga bisa dijadikan sebagai rekomendasi input value, juga autocomplete; 
+    3. Kita bisa menggunakan datalist tag;
+    4. di dalam datalsit tag, kita bisa gunakna option tag;
+    5. untuk menghubungkan dari input type text ke datalist, kita bisa menggunnakan atribut lsit yang mengacu ke id datalist;-->
+    <form action="#">
+      <label for="hobi">Hobi</label>
+      <input type="text" name="hobi" id="hobi" list="hobi-hobi" />
+      <input type="submit" value="simpan" />
+      <datalist id="hobi-hobi">
+        <option value="coding">Coding</option>
+        <option value="reading">Reading</option>
+        <option value="write">Writing</option>
+      </datalist>
+    </form>
+  </body>
+</html>
