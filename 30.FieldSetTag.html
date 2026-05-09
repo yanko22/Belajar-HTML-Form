@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,31 @@
   <body>
     <!-- 
     Field Set Tag
+    1. tag fieldset digunakan untuk membungkus / grouping beberapa input sehingga lebih mudah untuk dimengerti ketika dilihat oleh pengguna;
+    2. menggunakan fieldset tag sang baik ketika misal input data sangat banyak, dan kita ingin melakukan grouping input data yang sesuai;
+    3. contoh  ketika registrai, dibutuhkan identitas, alamat, dll, kita bisa grouping berdasarkan input data yang sesuai;-->
+    <!-- 
+    legend tag
+    1. saat menggunakan fieldset tag, kita bisa menambahkan legend tag untuk memberikan judul atau deskripsi untuk grup input tersebut;
      -->
+    <form action="#">
+      <fieldset>
+        <legend>Identitas</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Alamat</legend>
+        <label for="jalan">Jalan:</label>
+        <input type="text" id="jalan" name="jalan" /><br />
+        <label for="kota">Kota:</label>
+        <input type="text" id="kota" name="kota" /><br />
+      </fieldset>
+      <input type="submit" value="Simpan" />
+    </form>
   </body>
 </html>
